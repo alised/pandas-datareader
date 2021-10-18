@@ -9,6 +9,20 @@ pandas.
 [![image](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![License](https://img.shields.io/pypi/l/pandas-datareader)](https://pypi.org/project/pandas-datareader/)
 
+## پشتیبانی از بورس اوراق بهادار تهران
+جهت دسترسی به دیتای بورس تهران لازم است تا به روش زیر ماژول را نصب کنید:
+
+``` shell
+python -m pip install git+https://github.com/alised/pandas-datareader.git
+```
+
+## نحوه دریافت دیتای بورس تهران
+
+``` python
+import pandas_datareader as pdr
+pdr.get_data_tse('نوری', adjust_price = True, interval = 'd') # d/w/m
+```
+
 ## Installation
 
 Install using `pip`
